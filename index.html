@@ -1,0 +1,97 @@
+ <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width-device-width initial-scale=1.0">
+        <title>MAGNUM</title>
+        <link rel="stylesheet" href="styles.css" />
+        <style>
+        .contenedor{
+            position: relative;
+            width: 40%;
+        }
+        .imagen{
+            display: block;
+            width: 80%;
+            height: auto;
+        }
+        .overlay{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 80%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #ffbb15;
+        }
+        .contenedor:hover .overlay {
+            opacity: 1;
+        }
+        .texto{
+            color: black;
+            font-size: 40px;
+            font-family: "Gelasio", serif;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, 50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        </style>
+    </head>
+    <body>
+        <a href="index.html"><img src="img/Magnum_logo.webp" class="img-2" alt=""></a> <!--- ESTA IMAGEN LLEVARA A LA PAGINA DE INICIO --->
+        <nav>
+            <ul class="contenedor-menu">
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <section class="contenedor-video" style="margin-top: 0">
+            <video autoplay loop muted>
+                <source src="video/magnum.mp4" type="video/mp4">
+            </video>
+        </section>
+        
+        <div class="contenedor centrar-paleta">
+            <img src="img/magnum-paleta.jpg" alt="paleta" class="imagen">
+            <div class="overlay">
+                <div class="texto">MAGNUM MÉXICO</div>
+            </div>
+        </div>
+        <section>
+            <h2>Artículos Magnum</h2>
+            <p>Lee los siguientes artículos y descubre más información sobre nuestra empresa y todo lo relacionado con los deliciosos productos que Magnum te ofrece:</p>
+                <section class="contenedor-servicios">
+                    <div>
+                        <a href="https://www.magnumicecream.com/mx/es/stories/lifestyle/cookie-remix.html"><img src="img/magnum1.jpg" alt=""></a>
+                        <h1>COOKIE REMIX</h1>
+                    </div>
+                    <div>
+                        <a href="https://www.magnumicecream.com/mx/es/stories/lifestyle/fiesta-bresh.html"><img src="img/magnum2.jpg" alt=""></a>
+                        <h1>FIESTA BRESH</h1>
+                    </div>
+                    <div>
+                        <a href="https://www.magnumicecream.com/mx/es/stories/lifestyle/celebra-a-mama.html"><img src="img/magnu3.jpg" alt=""></a>
+                        <h1>CELEBRA EL 10 DE MAYO</h1>
+                    </div>                   
+                </section>
+        </section>
+        <footer class="contenedor-footer">
+            <section>
+                <a href="https://www.instagram.com/magnum/"><img src="img/insta-icon.png" class="img"></a>
+            </section>
+            <section>
+               <a href="https://www.facebook.com/MagnumMexico"><img src="img/facebook-icon.png" class="img"></a>
+            </section>
+            <section>
+                <a href="https://x.com/MagnumMexico"><img src="img/twitter-icon.png" class="img"></a>
+            </section>
+        </footer>
+    </body>
+</html>
